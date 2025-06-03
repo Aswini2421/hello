@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.parent{
+    background-color: aliceblue;
+    height:100vh ;
+    border: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr repeat(2,1fr);
+    grid-template-rows:0.5fr 3fr repeat(3,1fr) ;
+}
+.child-1{
+    background-color: black;
+    color: aliceblue;
+    
+}
+.child-2{
+    background-color: crimson;
+    color: aliceblue;
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+.child-3{
+    background-color:blue;
+    color: aliceblue;
+    grid-row: 2/3;
+    grid-column: 1/5;
+}.child-4{
+    background-color: black;
+    color: aliceblue;
+    
+}
